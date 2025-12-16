@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Virtual Family Dispute Resolution System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Virtual Family Dispute Resolution System</h1>
+
+    <form id="caseForm">
+      <label>Type of Dispute</label>
+      <select id="caseType" required>
+        <option value="">Select</option>
+        <option value="divorce">Divorce</option>
+        <option value="custody">Child Custody</option>
+        <option value="maintenance">Maintenance</option>
+      </select>
+
+      <label>Case Details</label>
+      <textarea id="details" placeholder="Enter case details..." required></textarea>
+
+      <button type="submit">Submit Case</button>
+    </form>
+
+    <div id="result" class="hidden">
+      <h2>System Output</h2>
+      <p id="outputText"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
