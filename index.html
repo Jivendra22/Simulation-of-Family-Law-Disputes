@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Legal Information System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="app-container">
+    <h1>Indian Legal Information System</h1>
+    <p class="subtitle">
+      A web-based decision support system for family law matters (India)
+    </p>
+
+    <div class="card">
+      <label>Legal Topic</label>
+      <select id="lawType">
+        <option value="divorce">Divorce</option>
+        <option value="custody">Child Custody</option>
+        <option value="maintenance">Maintenance</option>
+      </select>
+
+      <label>Case Description</label>
+      <textarea id="userText" placeholder="Describe your situation clearly..."></textarea>
+
+      <button onclick="getLawInfo()">Analyze Case</button>
+    </div>
+
+    <div id="resultCard" class="result-card hidden">
+      <h3>System Output</h3>
+      <pre id="output"></pre>
+    </div>
+
+    <p class="disclaimer">
+      * This system is for academic simulation purposes only and does not constitute legal advice.
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
